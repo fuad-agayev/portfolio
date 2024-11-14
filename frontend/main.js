@@ -85,14 +85,57 @@ input_checking.addEventListener("click", () => {
       horizontal.style.display ="none";
     }
 })
-//  --------------------------------- menu  -----------------------------
 
 
+//  ---------------------   active scroll link  ----------------------------
+
+const sections = document.querySelectorAll("section");
+const navigation_link = document.querySelectorAll(".navigation-link");
+
+function setActive(){
+  let currentPosition = window.scrollY;
+
+  sections.forEach((section, index) => {
+    const sectioTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    if(currentPosition >= sectioTop - 50 && currentPosition < sectioTop + sectionHeight) {
+      navigation_link.forEach((nav_link) => nav_link.classList.remove("active"));
+      navigation_link[index].classList.add("active");
+    }
+  })
+}
+window.addEventListener("scroll", setActive);
+//  ---------------------   active scroll link  ----------------------------
+
+//  ---------------------  responsive active link  ----------------------------
+const responsive_link = document.querySelectorAll(".responsive-link");
+
+responsive_link.forEach((res_link, index) => {
+  res_link.addEventListener("click", () => {
+            responsive_link.forEach((res_link) => res_link.classList.remove("active"));
+            res_link.classList.add("active");
+  })
+})
+//  ---------------------  responsive active link  ----------------------------
 
 
+//  ---------------------  Typining   ----------------------------
 
+const div = document.getElementById("typining");
+const text = "Frontend_Developer";
 
-
+function textWritter(el, txt, i = 0){
+  if(i === 0){
+          el.textContent = "";
+        }
+     el.textContent += txt[i];
+     if(i === txt.length - 1){
+          return;
+     }
+      setTimeout(() => textWritter(el, txt, i + 1), 150)
+}
+textWritter(div, text);
+//  ---------------------  Typining   ----------------------------
 
 
 

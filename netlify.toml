@@ -1,0 +1,3 @@
+[build]
+  publish = "frontend"  # Frontend dosyalarınızın bulunduğu klasör
+  functions = "backend"  # Backend işlevlerinizin bulunduğu klasör

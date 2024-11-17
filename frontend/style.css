@@ -843,6 +843,7 @@ margin-left: 75px;
   .about h2 {
     top: 4%;
     font-size: 17px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   }
 
   .about .about-all {
@@ -1030,6 +1031,7 @@ margin-left: 75px;
     left: 50%;
     top: 4%;
     font-size: 17px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   }
 
   .portfolio .port-area-all {
@@ -1227,18 +1229,7 @@ margin-left: 75px;
     position: relative;
     height: 111vh;
   }
-  .contact h2 {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #aaa;
-    font-size: 25px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  }
-
+  
   .contact h2 {
     position: absolute;
     left: 50%;

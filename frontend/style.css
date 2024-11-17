@@ -1025,7 +1025,7 @@ margin-left: 75px;
 
 @media (min-width: 320px) and (max-width: 480px){
   .portfolio {
-    height: 177vh;
+    height: 200vh;
 }
   .portfolio h2 {
     left: 50%;
@@ -1355,7 +1355,7 @@ footer .social-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
   text-align: center;
 }
 
@@ -1420,6 +1420,7 @@ footer p {
   background-color: #333;
   text-align: center;
   border-radius: 5px;
+  margin-left: 4px;
 }
 
  footer .social-links a i{

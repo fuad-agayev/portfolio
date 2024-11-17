@@ -1351,7 +1351,7 @@ footer {
   text-decoration: none;
   font-size: 17px;
   wont-weight: 600;
-  color: #aaa;
+  color: rgba(0, 0, 250, 0.6);
   transition: 0.3s ease-in-out;
   font-style: italic;
 }

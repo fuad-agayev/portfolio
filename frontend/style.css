@@ -278,7 +278,7 @@ section {
 }
 
 .menu-line .bottom-line {
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -1151,6 +1151,7 @@ margin-left: 75px;
   outline: none;
   font-size: 17px;
   font-weight: 500;
+  margin-top: 5px;
  }
 
  .contact-area-all .contact-form form input:focus {
@@ -1211,7 +1212,7 @@ margin-left: 75px;
     width: 100%;
     height: 25px;
     background: transparent;
-    margin-top: 5px;
+    margin-top: 10px;
     text-align: center;
  }
 
@@ -1286,6 +1287,7 @@ margin-left: 75px;
     width: 300px; height: 40px;
     font-size: 14px;
     color: red;
+    margin-top: 2px;
   }  
 
   .contact-area-all .contact-form form input::placeholder{
@@ -1297,6 +1299,7 @@ margin-left: 75px;
     height: 115px;
     color: #000;
     font-size: 14px;
+    margin-top: 2px;
   }  
 
   .contact-area-all .contact-form form textarea::placeholder{
@@ -1408,7 +1411,7 @@ footer p {
      flex-direction: column;
      align-items: center;
      gap: 10px;
-     margin-top: 15px;
+     margin-top: 17px;
      color: #000;
   }
 

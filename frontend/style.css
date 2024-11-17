@@ -257,7 +257,7 @@ section {
   background-color: #fff;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
   z-index: 1002;
   user-select: none;
 }
@@ -278,7 +278,7 @@ section {
 }
 
 .menu-line .bottom-line {
-  top: 65%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -311,10 +311,9 @@ section {
     width: 100%;
     height: 100%;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.7); 
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-
+    background-color: rgba(250, 250, 250, 0.8); 
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
   }
 
   .horizontal {
@@ -322,7 +321,7 @@ section {
     top: 10%;
     left: 0;
     width: 100%;
-    height: 2;
+    height: 0.5px;
     color: rgba(250, 250, 250, 0.5);
     z-index: 1000;
   }  
@@ -331,7 +330,7 @@ section {
      width: 95%;
      min-width: 315px;
      height: 300px;
-     margin-top: 325px;
+     margin-top: 250px;
      margin-left: 13px;
   }
 
@@ -349,7 +348,7 @@ section {
 
 
   .slide ul li:hover {
-   border-bottom: 1px solid azure;
+   border-bottom: 1px solid rgba(0, 0, 250, 0.6);
    }
 
    .slide ul li:hover a {
@@ -361,7 +360,7 @@ section {
     display: block;
     text-decoration: none;
     font-size: 15px;
-    color: azure;
+    color: #333;
     text-transform: uppercase;
     letter-spacing: 5px;
     margin-bottom: 15px;
@@ -701,7 +700,8 @@ margin-left: 75px;
   
   .home .home-all .social-links a i{
     font-size: 17px;
-    margin-top: 5px;
+    margin-top: 6px;
+    margin-left: 1px;
   }
   
   .home .home-all .social-links a:hover{
@@ -1372,7 +1372,7 @@ footer .social-links a{
   border-radius: 5px;
   margin-top: 20px;
   box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.5);
-  background-color: whitesmoke;
+  background-color: #333;
   transition: 0.2s ease;
 }
 
@@ -1382,8 +1382,9 @@ footer .social-links a:hover{
 
 footer .social-links a i{
   font-size: 20px;
-  margin-top: 3px;
-  color: #333;
+  margin-top: 4px;
+  margin-left: 1px;
+  color: #fff;
 }
 
 
@@ -1411,7 +1412,7 @@ footer p {
      color: #000;
   }
 
-   footer .footer-list a{
+   footer .footer-list a {
      color: rgba(0, 0, 250, 0.6);
   }
 
@@ -1420,16 +1421,16 @@ footer p {
      color: #fff;
  }
 
- footer .social-links a{
+ footer .social-links a {
   width: 25px; height: 25px;
   margin-bottom: 20px;
   background-color: #333;
   text-align: center;
   border-radius: 5px;
-  margin-left: 4px;
+  margin-left: 2px;
 }
 
- footer .social-links a i{
+ footer .social-links a i {
   font-size: 14px;
   color: whitesmoke;
   margin-left: 0.5px;

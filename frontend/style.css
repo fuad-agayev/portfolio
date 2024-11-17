@@ -266,7 +266,7 @@ section {
   width: 25px;
   height: 2px;
   border-radius: 5px;
-  background-color: rgb(106, 90, 205)
+  background-color: rgb(106, 90, 205);
   transition: 0.3s ease;
 }
 

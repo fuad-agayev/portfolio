@@ -75,7 +75,6 @@ section {
   border-bottom: 1px solid #aaa;
 }
 
-
 .logo {
   position: absolute;
   top: 13px;
@@ -267,7 +266,7 @@ section {
   width: 25px;
   height: 2px;
   border-radius: 5px;
-  background-color: #333;
+  background-color: violet;
   transition: 0.3s ease;
 }
 
@@ -1389,7 +1388,6 @@ footer .social-links a i{
   margin-left: 1px;
   color: #fff;
 }
-
 
 footer p {
   font-size: 14px;

@@ -1033,7 +1033,7 @@ margin-left: 75px;
 
 @media (min-width: 320px) and (max-width: 480px){
   .portfolio {
-    height: 180vh;
+    height: 200vh;
 }
   .portfolio h2 {
     left: 50%;

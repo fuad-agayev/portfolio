@@ -266,7 +266,7 @@ section {
   width: 25px;
   height: 2px;
   border-radius: 5px;
-  background-color: violet;
+  background-color: rgb(106, 90, 205)
   transition: 0.3s ease;
 }
 
@@ -1286,7 +1286,7 @@ margin-left: 75px;
     width: 300px; height: 40px;
     font-size: 14px;
     color: red;
-    margin-top: 2px;
+    margin-top: 7px;
   }  
 
   .contact-area-all .contact-form form input::placeholder{
@@ -1298,7 +1298,7 @@ margin-left: 75px;
     height: 115px;
     color: #000;
     font-size: 14px;
-    margin-top: 2px;
+    margin-top: 7px;
   }  
 
   .contact-area-all .contact-form form textarea::placeholder{

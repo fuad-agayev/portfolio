@@ -1287,7 +1287,7 @@ margin-left: 75px;
     width: 300px; height: 40px;
     font-size: 14px;
     color: red;
-    margin-top: 7px;
+    margin-top: 2px;
   }  
 
   .contact-area-all .contact-form form input::placeholder{
@@ -1299,7 +1299,7 @@ margin-left: 75px;
     height: 115px;
     color: #000;
     font-size: 14px;
-    margin-top: 7px;
+    margin-top: 2px;
   }  
 
   .contact-area-all .contact-form form textarea::placeholder{
@@ -1309,7 +1309,7 @@ margin-left: 75px;
    .contact-area-all .contact-form input[type="submit"]{
     font-size: 14px;
     font-weight: 500;
-    margin-top: 7px;
+    margin-top: 2px;
    }
 
    .contact-area-all .contact-form .success-info p{
@@ -1317,7 +1317,7 @@ margin-left: 75px;
     padding: 4px;
     color: mediumspringgreen;
     font-weight: 500;
-    margin-top: 7px;
+    margin-top: 2px;
   }
 
 }

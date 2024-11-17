@@ -919,11 +919,15 @@ margin-left: 75px;
   width: 90%;
   height: 45px;
   font-size: 14px;
-  border-radius: 5px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  border-radius: 3px;
+  font-weight: 400;
+  margin-bottom: 5px;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
  }
+ 
+ 
+ 
 }
 /*  ---------------------   about  -------------------  */
 

@@ -845,7 +845,7 @@ margin-left: 75px;
 
  @media (min-width: 320px) and (max-width: 480px){
   .about {
-    height: 200vh;
+    height: 210vh;
   }
   .about h2 {
     top: 4%;
@@ -895,8 +895,7 @@ margin-left: 75px;
   width: 300px;
   height: 100%;
   margin-left: 15px;
-  margin-top: 50px;
-  border: 1px solid red;
+  margin-top: 25px;
 }
 
 .about .about-all .my-skills h4 {
@@ -909,7 +908,6 @@ margin-left: 75px;
   grid-template-columns: repeat(2, 1fr);
   width: 177px;
   height: 250px;
-  border: 1px solid yellow;
   margin-left: 25px;
  }
 
@@ -1033,7 +1031,7 @@ margin-left: 75px;
 
 @media (min-width: 320px) and (max-width: 480px){
   .portfolio {
-    height: 200vh;
+    height: 210vh;
 }
   .portfolio h2 {
     left: 50%;

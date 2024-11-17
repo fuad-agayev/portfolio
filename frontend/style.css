@@ -845,7 +845,7 @@ margin-left: 75px;
 
  @media (min-width: 320px) and (max-width: 480px){
   .about {
-    height: 200vh;
+    height: 270vh;
   }
   .about h2 {
     top: 4%;

@@ -1,43 +1,47 @@
 // backend/server.js
 const express = require('express');
+const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer'); // Email göndermek için
+const cors = require('cors');
+require('dotenv').config();
+
 const app = express();
 const PORT = 3000;
 
 // Middleware
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 app.use(bodyParser.json());
 
-// İletişim formu gönderim endpoint'i
-app.post('/submit-form', (req, res) => {
+// POST Endpoint
+app.post('/send', async (req, res) => {
     const { name, email, message } = req.body;
 
-    // E-posta gönderimi için yapılandırma
+    // Nodemailer Config
     const transporter = nodemailer.createTransport({
-        service: 'gmail', // Örneğin Gmail kullanabilirsiniz
+        service: 'gmail', // veya kullandığınız e-posta servisi
         auth: {
-            user: 'agayevfuad', // E-posta adresinizi buraya yazın
-            pass: 'your-email-password' // E-posta şifrenizi buraya yazın
-        }
+            user: process.env.EMAIL_USER, // .env dosyasından gelecek
+            pass: process.env.EMAIL_PASS, // .env dosyasından gelecek
+        },
     });
 
     const mailOptions = {
         from: email,
-        to: 'agayevfuad99851@yahoo.com', // Kendi e-posta adresiniz
+        to: process.env.RECEIVER_EMAIL, // E-postaların gideceği adres
         subject: `Message from ${name}`,
-        text: message
+        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return res.status(500).send(error.toString());
-        }
-        res.status(200).send('Message sent successfully!');
-    });
+    try {
+        await transporter.sendMail(mailOptions);
+        res.status(200).json({ message: 'Message sent successfully!' });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Failed to send message.' });
+    }
 });
 
-// Sunucuyu başlat
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+

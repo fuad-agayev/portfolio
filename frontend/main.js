@@ -10,7 +10,7 @@ const input_checking = document.querySelector(".input-checking");
 const horizontal = document.querySelector(".horizontal");
 
 
-//  -------------------- dark and light mode --------------------------
+//!  -------------------- dark and light mode --------------------------
 const clickDarkMode = () => {
   if(body.getAttribute("data-mode") === 'light'){
     body.setAttribute("data-mode", 'dark');
@@ -20,9 +20,9 @@ const clickDarkMode = () => {
 }
 
 mode_icon.addEventListener("click", clickDarkMode);
-//  -------------------- dark and light mode --------------------------
+//!  -------------------- dark and light mode --------------------------
 
-//  -------------------------- menu  ----------------------------------
+//!  -------------------------- menu  ----------------------------------
 
 const menuToggle = () => {
   // Menü görüntüleme durumunu kontrol ediyoruz
@@ -85,9 +85,10 @@ input_checking.addEventListener("click", () => {
       horizontal.style.display ="none";
     }
 })
+//!  -------------------------- menu  ----------------------------------
 
 
-//  ---------------------   active scroll link  ----------------------------
+//!  ---------------------   active scroll link  ----------------------------
 
 const sections = document.querySelectorAll("section");
 const navigation_link = document.querySelectorAll(".navigation-link");
@@ -105,9 +106,9 @@ function setActive(){
   })
 }
 window.addEventListener("scroll", setActive);
-//  ---------------------   active scroll link  ----------------------------
+//!  ---------------------   active scroll link  ----------------------------
 
-//  ---------------------  responsive active link  ----------------------------
+//!  ---------------------  responsive active link  ----------------------------
 const responsive_link = document.querySelectorAll(".responsive-link");
 
 responsive_link.forEach((res_link, index) => {
@@ -116,10 +117,10 @@ responsive_link.forEach((res_link, index) => {
             res_link.classList.add("active");
   })
 })
-//  ---------------------  responsive active link  ----------------------------
+//!  ---------------------  responsive active link  ----------------------------
 
 
-//  ---------------------  Typining   ----------------------------
+//!  ---------------------  Typining   ----------------------------
 
 const div = document.getElementById("typining");
 const text = "Frontend_Developer";
@@ -135,11 +136,30 @@ function textWritter(el, txt, i = 0){
       setTimeout(() => textWritter(el, txt, i + 1), 150)
 }
 textWritter(div, text);
-//  ---------------------  Typining   ----------------------------
+//!  ---------------------  Typining   ----------------------------
 
 
+//!  ---------------------  Form send to email   ----------------------------
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
 
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
 
+  const response = await fetch('http://localhost:5500/load', {
+    method: 'POST', 
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ name, email, message }),
+  });
+
+  const text = await response.text();
+  alert(text.message)
+  
+});
+//!  ---------------------  Form send to email   ----------------------------
 
 
 

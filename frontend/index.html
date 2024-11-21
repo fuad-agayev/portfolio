@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> FA-FOLIO </title>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <div class="logo">
@@ -60,7 +60,7 @@
     <section class="home" id="home">
              <div class="home-all">
              <div class="avatar-text-icon">
-              <img src="fu-14.png" alt="fuad photo"/>
+              <img src="kir-85.png" alt="fuad photo"/>
               <i class="fa-regular fa-hand hand-wave"></i>
               <h4><span class="hello"> HELLO! I'M</span> FUAD </h4>
              </div>
@@ -71,7 +71,7 @@
                 "With over 2 + years of learning experience in web development,
                  I'm passionate brave about creating dynamic websites and applications. 
                 My favorite frameworks are, Vue js  and Nuxt js in web development area,
-                 which I love using to build the best responsive & engaging user exper."
+                 which I love using to build the best responsive & engaging user expertise."
               </p>
               </div>
              <div class="home-contact-download">
@@ -205,10 +205,10 @@
                           </div>
                        </div>
                        <div class="contact-form">
-                           <form action="submit-form" method="post">
-                            <input type="text" name="name" id="name" placeholder="Name"/>
-                            <input type="email" name="email" id="email" placeholder="Email"/>
-                            <textarea placeholder="Typing Message ... "></textarea>
+                           <form id="contactForm" method="POST">
+                            <input type="text" name="name" id="name" placeholder="Name" required />
+                            <input type="email" name="email" id="email" placeholder="Email" required />
+                            <textarea id="message" name="message" placeholder="Typing Message ... " required></textarea>
                             <input type="submit" value="Send Message"/>
                            </form>
                            <div class="success-info">

@@ -1332,6 +1332,21 @@ margin-left: 75px;
   transform: scale(1.2);
  }
 
+ .portfolio-projects .projects-link h4 a {
+       font-size: 17px;
+       display: inline-block;
+       color: blue;
+       text-decoration: none;
+       margin-top: 25%;
+ }
+
+
+ .portfolio-projects .projects-link h4 a:hover {
+  color: red;
+}
+
+
+
 .portfolio-projects .projects-text-icon{
   position: absolute;
   bottom: -15%;

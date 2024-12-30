@@ -147,7 +147,7 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
 
-  const response = await fetch('http://localhost:5500/load', {
+  const response = await fetch('../backend/load', {
     method: 'POST', 
     headers: {
       'Content-Type': 'application/json',
